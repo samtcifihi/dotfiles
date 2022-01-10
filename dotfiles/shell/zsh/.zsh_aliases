@@ -1,0 +1,43 @@
+# basic shell
+alias \
+    cp="cp -iv" \
+    mv="mv -iv" \
+    rm="rm -Iv" \
+    mkd="mkdir -pv" \
+    ls="ls -h --color=auto --group-directories-first" \
+    lll="ls -lAh | less" \
+    ll="ls -lAh" \
+    l="ls -CF" \
+    la="ls -A" \
+    cl="clear"
+
+# colors
+alias \
+    grep="grep --color=auto" \
+    diff="diff --color=auto"
+
+# youtube-dl
+alias \
+    yt="youtube-dl --add-metadata -i" \
+    yta="youtube-dl -xi -f bestaudio/best"
+
+# git
+alias \
+    g="git" \
+    ga="git add" \
+    gci="git commit" \
+    gst="git status" \
+    gp="git push" \
+    gpl="git pull"
+
+# vim
+alias \
+    v="vim"
+
+# sc-im
+alias \
+    scim="sc-im"
+
+# python
+alias \
+    py="python3.7"

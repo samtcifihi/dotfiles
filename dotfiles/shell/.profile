@@ -16,6 +16,9 @@ if [ -n "$BASH_VERSION" ]; then
     fi
 fi
 
+# include .zshrc if it exists
+[ -f ~/.zshrc ] && source ~/.zshrc
+
 # set PATH so it includes user's private bin if it exists
 if [ -d "$HOME/bin" ] ; then
     PATH="$HOME/bin:$PATH"
@@ -35,3 +38,7 @@ export GOPATH=$HOME/go:$HOME/exercism/go:$HOME/go/src/github.com
 if [ -d "$HOME/.scripts" ] ; then
     PATH="$HOME/.scripts:$PATH"
 fi
+
+# exports
+export EDITOR="vim"
+export READER="zathura"
